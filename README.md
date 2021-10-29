@@ -1,1 +1,1 @@
-# Numeri-ne-metode-1
+# Numericne-metode-1 
