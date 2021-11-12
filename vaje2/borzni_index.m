@@ -28,6 +28,8 @@ for d = 2:n
     I_round(d) = zaokrozi(r,3)*I_round(d-1);
 end
 
+plot(1:n,I)
+hold on
 plot(1:n,I_gor)
 hold on
 plot(1:n,I_dol)
