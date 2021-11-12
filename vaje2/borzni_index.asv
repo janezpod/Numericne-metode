@@ -1,0 +1,8 @@
+% sum(,2) sešteva po vrsticah 
+
+C = sum(marketcap(:,4:end),2); 
+n = length(marketcap(:,1));
+I = zeros(1,n);
+I(1) = 1000;
+
+for d = 2:n 
