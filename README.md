@@ -1,1 +1,0 @@
-# Numericne-metode-1 
