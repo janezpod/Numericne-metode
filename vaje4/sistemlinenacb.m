@@ -47,24 +47,4 @@ naj_zgo_ocena = min(z);
 os = s <= A_2;
 oz = A_2 <= z;
 
-%%%%%%%%%%%%% 3 %%%%%%%%%%%%%
 
-K = [0 0 1; 1 1 1; 4 2 1];
-napovedi = T;
-
-for i = 1:10
-    for j = 4:24
-        abc = T(j-3:j-1,i);
-        p = linsolve(K,abc);
-        napovedi(j,i) = polyval(p,j);
-    end
-end
-
-
-port_r = T * ones(10,1);
-port_n = napovedi * ones(10,1);
-
-t = 1:24;
-plot(t,port_n)
-hold on
-plot(t,port_r)
