@@ -45,4 +45,4 @@ y2 = norm(y,2);
 
 [Lp,Up,P] = lu(B);
 
-razmerje = max(max(Up))/max(max(U));
+razmerje = max(max(abs(Up)))/max(max(abs(U)));
