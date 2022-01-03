@@ -11,7 +11,7 @@ for i = 1:n-1
 end
 
 d = 5 * ones(1,n-5);
-e = -6 * ones(1,n-6);
+e = 6 * ones(1,n-6);
 
 A = diag(a);
 B = d_matrika(A,b,-1);
@@ -45,4 +45,4 @@ y2 = norm(y,2);
 
 [Lp,Up,P] = lu(B);
 
-razmerje = norm(Up,'inf')/norm(U,'inf');
+razmerje = max(max(Up))/max(max(U));
