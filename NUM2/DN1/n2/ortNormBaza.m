@@ -1,5 +1,6 @@
 function baza = ortNormBaza(baza,a,b,N)
-% Ortonormalizacija izbrane baze s Gram-Schmidtovim postopkom
+% Ortonormalizacija izbrane baze z modificiranim Gram-Schmidtovim postopkom
+
 k = length(baza);
 for i = 1 : k
     norma = sqrt(diskSkProd(baza{i},baza{i},a,b,N));
