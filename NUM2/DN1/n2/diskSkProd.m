@@ -11,3 +11,11 @@ for i = 1: N+1
 end
 vrednost = (b-a)./(N+1) .* s;
 end
+
+% Možna je alternativa, če namesto bazno funkcijo f = @(x) 1 
+% zapisemo f = @(x) x.^0 oz. f = @(x) 1 + 0*x, lahko uporabimo kar
+
+% x = linspace(a,b,N+1);
+% produkt = dot(f(x),g(x));
+% y = (b-a)/(N+1)* produkt;
+% end
