@@ -39,6 +39,9 @@ fprintf('Stopnja polinoma: n = %d\n\n', n);
 % Prvi korak: izračunaj polinom na E0
 [koef_1, m_1] = izracunajPolinom(f, E0, n);
 
+fprintf('========================================\n');
+fprintf('KONČNI ODGOVORI:\n');
+fprintf('========================================\n');
 fprintf('Prvi del: min_{p ∈ P_3} ||f - p||_{∞,E} (napaka na E0)\n');
 fprintf('|m| v prvem koraku = %.15f\n\n', abs(m_1));
 
